@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تواصل واحجز | Malki Gym</title>
+<meta name="description" content="تواصل مع نادي المالكي الرياضي بدمشق أو احجز حصتك الأولى مباشرة.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="scroll-progress"></div>
+
+<header class="site">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">MALKI<span>.</span>GYM</span>
+      <span class="brand-ar">نادي المالكي</span>
+    </a>
+    <button class="burger" aria-label="افتح القائمة">☰</button>
+    <ul class="navlinks">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="prices.html">الأسعار</a></li>
+      <li><a href="contact.html" class="active">تواصل واحجز</a></li>
+      <li><a href="account.html">حسابي</a></li>
+      <li><a href="tel:0113719281" class="cta">011 371 9281</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="texture-glow" style="opacity:.25"></div>
+  <div class="wrap" style="position:relative">
+    <span class="eyebrow">تواصل معنا</span>
+    <h1>احجز حصتك، أو مرّ علينا</h1>
+    <p>عبيلك الفورم وبنرجعلك بأقرب وقت، أو اتصل فينا مباشرة — إحنا بحي المالكي وبفرحلك تجينا.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap contact-grid">
+
+    <div class="reveal">
+      <div class="contact-details">
+        <div class="detail-row">
+          <span class="ic">📍</span>
+          <div><b>العنوان</b><span>شارع عبد الملك بن مروان، حي المالكي، دمشق، سوريا</span></div>
+        </div>
+        <div class="detail-row">
+          <span class="ic">☎️</span>
+          <div><b>الهاتف</b><a href="tel:0113719281">011 371 9281</a></div>
+        </div>
+        <div class="detail-row">
+          <span class="ic">🕐</span>
+          <div><b>أوقات الدوام</b><span>يومياً (السبت للجمعة) من 7:00 صباحاً حتى 11:00 مساءً</span></div>
+        </div>
+        <div class="detail-row">
+          <span class="ic">⭐</span>
+          <div><b>تقييم الزوار</b><span>4.3 من 5 على خرائط غوغل</span></div>
+        </div>
+      </div>
+
+      <b style="font-family:'Cairo',sans-serif;display:block;margin-bottom:10px">تابعونا</b>
+      <div class="social-row">
+        <a href="https://www.facebook.com/Malki.Gym/" aria-label="فيسبوك" target="_blank" rel="noopener">f</a>
+        <a href="https://www.instagram.com/malki_gym/" aria-label="انستغرام" target="_blank" rel="noopener">IG</a>
+      </div>
+
+      <iframe class="map-frame" src="https://www.google.com/maps?q=33.5184026,36.2768936&z=16&output=embed" loading="lazy" title="موقع Malki Gym على الخريطة"></iframe>
+      <a href="https://www.google.com/maps/place/Malki+gym/@33.5184026,36.2768936,17z" target="_blank" rel="noopener" style="display:inline-block;margin-top:12px;color:var(--forge);font-family:'Cairo',sans-serif;font-weight:700;font-size:.9rem">افتح الموقع على خرائط غوغل ↗</a>
+    </div>
+
+    <div class="contact-card reveal">
+      <h3 style="margin-bottom:6px">احجز حصتك</h3>
+      <p style="color:var(--muted);font-size:.92rem;margin-bottom:26px">عبي بياناتك وفريق النادي بيتواصل معك لتأكيد الموعد.</p>
+
+      <form class="booking" id="bookingForm">
+        <div class="field-row">
+          <div class="field">
+            <label for="name">الاسم الكامل</label>
+            <input type="text" id="name" name="name" required placeholder="اسمك">
+          </div>
+          <div class="field">
+            <label for="phone">رقم الهاتف</label>
+            <input type="tel" id="phone" name="phone" required placeholder="09XXXXXXXX">
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="type">نوع الطلب</label>
+            <select id="type" name="type">
+              <option>حصة تجريبية</option>
+              <option>اشتراك جديد</option>
+              <option>استفسار عن الأسعار</option>
+              <option>تدريب شخصي</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="time">الوقت المفضل للتواصل</label>
+            <select id="time" name="time">
+              <option>صباحاً (7 - 12)</option>
+              <option>ظهراً (12 - 5)</option>
+              <option>مساءً (5 - 11)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="message">ملاحظات إضافية (اختياري)</label>
+          <textarea id="message" name="message" rows="4" placeholder="أي شي بدك تخبرنا فيه..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-forge btn-block">إرسال الطلب</button>
+        <div class="form-msg" id="formMsg"></div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<svg class="damask-divider" viewBox="0 0 1200 64" preserveAspectRatio="none" aria-hidden="true">
+  <path d="M0 32 Q150 8 300 32 T600 32 T900 32 T1200 32" stroke="#333a41"/>
+  <path d="M0 40 Q150 58 300 40 T600 40 T900 40 T1200 40" stroke="#e2872a" opacity=".5"/>
+</svg>
+
+<section style="padding-top:70px">
+  <div class="wrap" style="max-width:820px">
+    <div class="sec-head reveal">
+      <span class="eyebrow">أسئلة شائعة</span>
+      <h2>قبل ما تجي</h2>
+    </div>
+    <div class="reveal">
+      <details class="faq-item" open>
+        <summary>هل في مواقف سيارات؟</summary>
+        <p>احكي معنا عالتليفون قبل ما تجي وبنعطيك أفضل طريقة توصل فيها ووين تركن.</p>
+      </details>
+      <details class="faq-item">
+        <summary>هل النادي مفتوح كل أيام الأسبوع؟</summary>
+        <p>إيه، النادي مفتوح يومياً من 7:00 صباحاً لـ 11:00 مساءً بلا استثناء.</p>
+      </details>
+      <details class="faq-item">
+        <summary>وين بالضبط النادي؟</summary>
+        <p>بشارع عبد الملك بن مروان بحي المالكي، قريب من المكتبة الوطنية وساحة الروضة.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <span class="brand-mark">MALKI<span>.</span>GYM</span>
+      <p>نادي المالكي الرياضي — Get Fit, Be Strong. حي المالكي، دمشق.</p>
+      <div class="social-row" style="margin-top:18px">
+        <a href="https://www.facebook.com/Malki.Gym/" aria-label="فيسبوك" target="_blank" rel="noopener">f</a>
+        <a href="https://www.instagram.com/malki_gym/" aria-label="انستغرام" target="_blank" rel="noopener">IG</a>
+      </div>
+    </div>
+    <div class="foot-col">
+      <h4>روابط سريعة</h4>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="prices.html">الأسعار</a></li>
+        <li><a href="contact.html">تواصل واحجز</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>تواصل</h4>
+      <ul>
+        <li><a href="tel:0113719281">011 371 9281</a></li>
+        <li><span style="color:var(--muted);font-size:.9rem">شارع عبد الملك بن مروان، المالكي، دمشق</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom wrap">© 2026 Malki Gym — نادي المالكي الرياضي. جميع الحقوق محفوظة.</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
